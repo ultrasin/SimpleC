@@ -1,16 +1,24 @@
-#include <iostream>
-#include <vector>
-#include <string>
-
-using std::cout; using std::string; using std::vector; using std::endl;
+#include <SFML/Graphics.hpp>
 
 int main()
 {
-    vector<string> msg {"Bye", "baby", "from", "another", "string!"};
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
 
-    for (const string& word : msg)
+    while (window.isOpen())
     {
-        cout << word << " ";
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(shape);
+        window.display();
     }
-    cout << endl;
+
+    return 0;
 }
