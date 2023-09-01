@@ -5,9 +5,9 @@
  MYSYS2 ver 13.0.1 x64 architecture.  
  SFML ver 2.6.0 x64.  
  Terminal code for coompiling, linking and running respectively:   
- g++ -IC:\SFML-2.6.0\include -c main.cpp -o main.o  
- g++ main.o -LC:\SFML-2.6.0\lib -lsfml-graphics -lsfml-window -lsfml-system -o runrace  
- ./runrace
+ g++ -Isrc/include -c main.cpp  // Changed so you do not need to download SFML. Already in project.   
+ g++ main.o -o main -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system  
+ ./main.exe
 
 # SimpleC - ESP  
  Publicando sobre Librerias SFML compiladas. Requiere SO de 64bit.  
@@ -16,9 +16,6 @@
  MYSYS2 ver 13.0.1 x64. Opcional en el sentido que pueden bajar cualquier compilador.  
  SFML ver 2.6.0 x64.  
  Codigos para compilar, vincular y correr respectivamente:  
- g++ -IC:\SFML-2.6.0\include -c main.cpp -o main.o  
- g++ main.o -LC:\SFML-2.6.0\lib -lsfml-graphics -lsfml-window -lsfml-system -o nombre_programa  
- ./nombre_programa  
-
- # How to run the program. It launches the 'tasks.json' file to build automatically now.
- ![Run Configuration](images/runSettings.png)
+ g++ -Isrc/include -c main.cpp  // Se cambio para no descargar SFML. Viene incluido en el proyecto  
+ g++ main.o -o main -Lsrc/lib -lsfml-graphics -lsfml-window -lsfml-system  
+ ./main.exe  
