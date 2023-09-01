@@ -19,3 +19,6 @@
  g++ -IC:\SFML-2.6.0\include -c main.cpp -o main.o
  g++ main.o -LC:\SFML-2.6.0\lib -lsfml-graphics -lsfml-window -lsfml-system -o nombre_programa
  ./nombre_programa
+
+ # How to run the program. It launches the 'tasks.json' file to build automatically now.
+ ![Run Configuration](images/runSettings.png)
