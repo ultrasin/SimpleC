@@ -2,9 +2,13 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode(300, 300), "SFML works!");
+    sf::CircleShape shape1(100.f);
+    sf::CircleShape shape2(120.f);
+    sf::CircleShape shape3(140.f);
+    shape1.setFillColor(sf::Color::Green);
+    shape2.setFillColor(sf::Color::Red);
+    shape3.setFillColor(sf::Color::Blue);
 
     while (window.isOpen())
     {
@@ -16,7 +20,9 @@ int main()
         }
 
         window.clear();
-        window.draw(shape);
+        window.draw(shape1);
+        window.draw(shape2);
+        window.draw(shape3);
         window.display();
     }
 
