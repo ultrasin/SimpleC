@@ -1,4 +1,4 @@
-SimpleC - ENG  
+# SimpleC - ENG  
 Posting SFML libraries compilation. 64bit OS required.  
 Making an easy game. No crazy graphics yet.  
 Visual Studio Code - Extensions: 'C/C++ by Windows', 'Error Lens' and 'Prettier Code'.  
@@ -9,7 +9,9 @@ g++ -IC:/SFML-2.6.0/include -c main.cpp // Change to your SFML/include path.
 g++ main.o -o main -LC:\SFML-2.6.0\lib -lsfml-graphics -lsfml-window -lsfml-system // Same here to ../lib  
 ./main.exe  
 
-SimpleC - ESP  
+# Changes. Update to your path >> g++ -o main.exe main.cpp -I(sfml/include/path) -L(C:/sfml/lib/path) -lsfml-graphics -lsfml-window -lsfml-system
+
+# SimpleC - ESP  
 Publicando sobre Librerias SFML compiladas. Requiere SO de 64bit.  
 Haciendo un juego sencillo. Sin graficas locas por el momento.  
 Visual Studio Code - Extensiones: 'C/C++ de Windows', 'Error Lens' y 'Prettier Code'.  
@@ -19,5 +21,7 @@ Codigos para compilar, vincular y correr respectivamente:
 g++ -IC:/SFML-2.6.0/include -c main.cpp // Cambiar ruta a su SFML/include  
 g++ main.o -o main -LC:\SFML-2.6.0\lib -lsfml-graphics -lsfml-window -lsfml-system // Igual aqui a ../lib  
 ./main.exe  
+
+# Cambios. Actualiza to rutas >> g++ -o main.exe main.cpp -I(sfml/include/path) -L(C:/sfml/lib/path) -lsfml-graphics -lsfml-window -lsfml-system
 
 ![running](images/source.png)

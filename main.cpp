@@ -1,4 +1,4 @@
-#include <SFML/Graphics.hpp> // Use terminal to compile and link. README.md has the instructions.
+#include <SFML/Graphics.hpp> // Once added your path in c_cpp_properties.json you need to restart vscode
 
 int main()
 {
